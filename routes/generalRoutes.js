@@ -2,10 +2,13 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('99786', function(req, res, next) {
-    res.render('99786', { title: 'Express' });
+router.get('/', function(req, res, next) {
+    res.render('index', { title: 'Express' });
 });
 
+router.get('/', function(req, res, next) {
+    res.render('index', { title: 'Express' });
+});
 router.get('/98687', function(req, res, next) {
     res.render('98687', { title: 'Express' });
 });
